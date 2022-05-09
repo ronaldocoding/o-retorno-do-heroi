@@ -9240,8 +9240,8 @@ TextureImporter:
       walls_side_top_165: 21300330
       walls_side_top_295: 21300590
       walls_side_top_104: 21300208
-      walls_side_top_138: 21300276
       walls_side_top_182: 21300364
+      walls_side_top_138: 21300276
       walls_side_top_326: 21300652
       walls_side_top_369: 21300738
       walls_side_top_117: 21300234
@@ -9285,16 +9285,16 @@ TextureImporter:
       walls_side_top_0: 21300000
       walls_side_top_305: 21300610
       walls_side_top_122: 21300244
-      walls_side_top_136: 21300272
       walls_side_top_178: 21300356
       walls_side_top_84: 21300168
       walls_side_top_107: 21300214
-      walls_side_top_195: 21300390
-      walls_side_top_325: 21300650
+      walls_side_top_136: 21300272
       walls_side_top_341: 21300682
       walls_side_top_153: 21300306
       walls_side_top_210: 21300420
+      walls_side_top_195: 21300390
       walls_side_top_45: 21300090
+      walls_side_top_325: 21300650
       walls_side_top_1: 21300002
       walls_side_top_15: 21300030
       walls_side_top_72: 21300144
@@ -9316,9 +9316,9 @@ TextureImporter:
       walls_side_top_127: 21300254
       walls_side_top_142: 21300284
       walls_side_top_214: 21300428
-      walls_side_top_247: 21300494
-      walls_side_top_253: 21300506
       walls_side_top_259: 21300518
+      walls_side_top_253: 21300506
+      walls_side_top_247: 21300494
       walls_side_top_233: 21300466
       walls_side_top_298: 21300596
       walls_side_top_23: 21300046
@@ -9348,9 +9348,9 @@ TextureImporter:
       walls_side_top_28: 21300056
       walls_side_top_42: 21300084
       walls_side_top_8: 21300016
+      walls_side_top_216: 21300432
       walls_side_top_79: 21300158
       walls_side_top_260: 21300520
-      walls_side_top_216: 21300432
       walls_side_top_176: 21300352
       walls_side_top_340: 21300680
       walls_side_top_256: 21300512
@@ -9362,8 +9362,8 @@ TextureImporter:
       walls_side_top_240: 21300480
       walls_side_top_237: 21300474
       walls_side_top_254: 21300508
-      walls_side_top_203: 21300406
       walls_side_top_264: 21300528
+      walls_side_top_203: 21300406
       walls_side_top_109: 21300218
       walls_side_top_143: 21300286
       walls_side_top_2: 21300004
