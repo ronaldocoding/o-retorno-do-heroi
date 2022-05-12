@@ -12,7 +12,6 @@ public class NextLevelPoint : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player") 
         {
-            Debug.Log("COLIDIU!");
             SceneManager.LoadScene(lvlName);
         }
     }
