@@ -14,20 +14,29 @@ public class Player : MonoBehaviour
     public float radiusAttack;
     public LayerMask layerEnemy;
     float timeNextAttack;
+    public int Health;
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        anim.SetBool("isAlive", true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
-        Jump();
-        Attack();
+        if (Health <= 0) 
+        {
+            anim.SetBool("isAlive", false);
+        } 
+        else
+        {
+            Move();
+            Jump();
+            Attack();
+        }
     }
 
     void Move()
@@ -108,6 +117,4 @@ public class Player : MonoBehaviour
             isJumping = true;
         }
     }
-
-
 }
