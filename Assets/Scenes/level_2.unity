@@ -5352,6 +5352,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1800079267053019146, guid: 590f8c3a7178b4ab483adc6f67b8cdc2, type: 3}
   m_PrefabInstance: {fileID: 1085890232}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &688799547
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688799546}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.012453977}
+  serializedVersion: 2
+  m_Radius: 0.1265967
 --- !u!1 &732828365
 GameObject:
   m_ObjectHideFlags: 0
@@ -6149,11 +6165,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1800079267053019147, guid: 590f8c3a7178b4ab483adc6f67b8cdc2, type: 3}
       propertyPath: m_Size.y
-      value: 0.39507264
+      value: 0.18428653
       objectReference: {fileID: 0}
     - target: {fileID: 1800079267053019147, guid: 590f8c3a7178b4ab483adc6f67b8cdc2, type: 3}
       propertyPath: m_Offset.y
-      value: 0.06746367
+      value: 0.17285672
       objectReference: {fileID: 0}
     - target: {fileID: 1800079267053019149, guid: 590f8c3a7178b4ab483adc6f67b8cdc2, type: 3}
       propertyPath: m_RootOrder
