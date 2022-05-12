@@ -58,6 +58,8 @@ public class EnemyFollow : MonoBehaviour
             EnemyLogic();
         }
 
+        Debug.Log(player.transform.position.x - transform.position.x);
+
     }
 
     void EnemyLogic()
