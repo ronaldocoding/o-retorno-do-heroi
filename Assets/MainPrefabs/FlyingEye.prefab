@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &642006136794884157
 Transform:
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db55f7e1f87f5d6429591356430174e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDistance: 3
+  attackDistance: 4
   moveSpeed: 2
   timer: 3
   AttackAnimationName: Fly_Attack
