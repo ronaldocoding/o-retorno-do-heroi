@@ -13,7 +13,6 @@ public class CameraMovement : MonoBehaviour
     private void Update()
     {
         playerPosX = player.transform.position.x;
-        Debug.Log("PlayerPosX: " + playerPosX);
         if(playerPosX >= 0.05 && playerPosX <= 318)
         {
             MainCam.transform.position = new Vector3
