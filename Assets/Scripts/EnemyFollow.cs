@@ -11,10 +11,11 @@ public class EnemyFollow : MonoBehaviour
     public string AttackAnimationName;
     public Transform leftLimit;
     public Transform rightLimit;
-    [HideInInspector]public Transform target;
-    [HideInInspector]public bool inRange; // check if the player is in range 
+    [HideInInspector] public Transform target;
+    [HideInInspector] public bool inRange; // check if the player is in range 
     public GameObject hotZone;
     public GameObject triggerArea;
+    public GameObject HeartPrefab;
     #endregion
 
     #region private variables
@@ -161,13 +162,27 @@ public class EnemyFollow : MonoBehaviour
         transform.eulerAngles = rotation;
     }
 
-    public void Death(){
+    public void Death()
+    {
         GetComponentInChildren<EnemiesHitBox>().gameObject.SetActive(false);
         anim.SetTrigger("Damage");
         Invoke("kill", 1.94f);
     }
 
-    private void kill(){
+    private void kill()
+    {
         Destroy(gameObject);
+
+        if (willHeartDrop())
+        {
+            HeartPrefab.SetActive(true);
+        }else{
+            Destroy(GetComponentInParent<GameObject>(), 0.25f);
+        }
+    }
+
+    private bool willHeartDrop()
+    {
+        return true;//Random.Range(1, 11) == 1;
     }
 }

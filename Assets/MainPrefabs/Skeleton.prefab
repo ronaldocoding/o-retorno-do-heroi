@@ -242,6 +242,7 @@ MonoBehaviour:
   inRange: 0
   hotZone: {fileID: 8524121963692057057}
   triggerArea: {fileID: 8524121963692057058}
+  HeartPrefab: {fileID: 0}
   player: {fileID: 0}
 --- !u!58 &8524121962078532038
 CircleCollider2D:
