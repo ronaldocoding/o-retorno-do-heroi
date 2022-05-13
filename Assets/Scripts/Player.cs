@@ -90,7 +90,7 @@ public class Player : MonoBehaviour
         Collider2D[] enemiesAttack = Physics2D.OverlapCircleAll(attackCheck.position, radiusAttack, layerEnemy);
         for(int i = 0; i < enemiesAttack.Length; i++)
         {
-            enemiesAttack[i].SendMessage("EnemyHit");
+            enemiesAttack[i].SendMessage("Death");
             Debug.Log(enemiesAttack[i].name);
         }
     }
@@ -117,4 +117,13 @@ public class Player : MonoBehaviour
             isJumping = true;
         }
     }
+
+    /*void OnTriggerEnter2D(Collider2D collider)
+    {
+        int enemyLayer = 6;
+        if(collider.gameObject.layer == enemyLayer)
+        {
+            collider.gameObject.GetComponent<EnemyFollow>().Death();
+        }
+    }*/
 }

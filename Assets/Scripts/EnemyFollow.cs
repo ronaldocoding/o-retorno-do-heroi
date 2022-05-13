@@ -160,4 +160,13 @@ public class EnemyFollow : MonoBehaviour
 
         transform.eulerAngles = rotation;
     }
+
+    public void Death(){
+        anim.SetTrigger("Damage");
+        Invoke("kill", 1.94f);
+    }
+
+    private void kill(){
+        Destroy(gameObject);
+    }
 }
