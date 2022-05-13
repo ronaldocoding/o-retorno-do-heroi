@@ -20,14 +20,22 @@ public class Player : MonoBehaviour
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        anim.SetBool("isAlive", true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
-        Jump();
-        Attack();
+        if (GameController.instance.Health <= 0) 
+        {
+            anim.SetBool("isAlive", false);
+        } 
+        else
+        {
+            Move();
+            Jump();
+            Attack();
+        }
     }
 
     void Move()
@@ -81,7 +89,7 @@ public class Player : MonoBehaviour
         Collider2D[] enemiesAttack = Physics2D.OverlapCircleAll(attackCheck.position, radiusAttack, layerEnemy);
         for(int i = 0; i < enemiesAttack.Length; i++)
         {
-            enemiesAttack[i].SendMessage("EnemyHit");
+            enemiesAttack[i].SendMessage("Death");
             Debug.Log(enemiesAttack[i].name);
         }
     }
@@ -109,5 +117,12 @@ public class Player : MonoBehaviour
         }
     }
 
-
+    /*void OnTriggerEnter2D(Collider2D collider)
+    {
+        int enemyLayer = 6;
+        if(collider.gameObject.layer == enemyLayer)
+        {
+            collider.gameObject.GetComponent<EnemyFollow>().Death();
+        }
+    }*/
 }
