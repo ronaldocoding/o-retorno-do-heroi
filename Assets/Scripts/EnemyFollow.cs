@@ -162,6 +162,7 @@ public class EnemyFollow : MonoBehaviour
     }
 
     public void Death(){
+        GetComponentInChildren<EnemiesHitBox>().gameObject.SetActive(false);
         anim.SetTrigger("Damage");
         Invoke("kill", 1.94f);
     }

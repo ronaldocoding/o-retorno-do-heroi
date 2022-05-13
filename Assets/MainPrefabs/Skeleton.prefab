@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 8524121962078532039}
   - component: {fileID: 8524121963692057059}
   - component: {fileID: 8524121962078532038}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 8524121963692056603}
   - component: {fileID: 8524121963692056602}
   - component: {fileID: 8524121963692056604}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HotZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 8524121963692056600}
   - component: {fileID: 8524121963692057063}
   - component: {fileID: 8524121963692056601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TriggerArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
