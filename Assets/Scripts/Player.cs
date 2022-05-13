@@ -14,7 +14,6 @@ public class Player : MonoBehaviour
     public float radiusAttack;
     public LayerMask layerEnemy;
     float timeNextAttack;
-    public int Health;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +26,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Health <= 0) 
+        if (GameController.instance.Health <= 0) 
         {
             anim.SetBool("isAlive", false);
         } 

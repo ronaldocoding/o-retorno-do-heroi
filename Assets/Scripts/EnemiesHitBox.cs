@@ -19,9 +19,9 @@ public class EnemiesHitBox : MonoBehaviour
         {
             isAttacked = true;
             player = other.gameObject;
-            player.GetComponent<Player>().Health -= 1;
+            GameController.instance.UpdateHealth(-1);
             player.GetComponent<Animator>().SetTrigger("take_hit");
-            Debug.Log("Vida player: " + player.GetComponent<Player>().Health);
+            Debug.Log("Vida player: " + GameController.instance.Health);
             
         }
     }
