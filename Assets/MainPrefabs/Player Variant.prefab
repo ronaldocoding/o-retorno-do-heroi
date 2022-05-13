@@ -108,6 +108,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6563998259301111063, guid: c34f273f290ac4d5abb140638c8277f3, type: 3}
   m_PrefabInstance: {fileID: 4891801095880406301}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &527160273
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800079267053019146}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0057146447}
+  serializedVersion: 2
+  m_Radius: 0.12295077
 --- !u!114 &527160278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,19 +145,3 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Health: 6
---- !u!58 &527160273
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800079267053019146}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0057146447}
-  serializedVersion: 2
-  m_Radius: 0.12295077

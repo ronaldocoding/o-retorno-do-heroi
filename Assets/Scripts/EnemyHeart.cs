@@ -31,7 +31,7 @@ public class EnemyHeart : MonoBehaviour
 
             collected.SetActive(true);
 
-            Destroy(transform.parent.gameObject, 0.25f);
+            Destroy(transform.parent.gameObject, 0.5f);
         }
     }
 }

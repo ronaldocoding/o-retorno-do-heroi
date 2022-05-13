@@ -16,6 +16,7 @@ public class EnemyFollow : MonoBehaviour
     public GameObject hotZone;
     public GameObject triggerArea;
     public GameObject HeartPrefab;
+    public GameObject player;
     #endregion
 
     #region private variables
@@ -24,8 +25,7 @@ public class EnemyFollow : MonoBehaviour
     private bool attackMode;
     private bool cooling; //cooldown after attack
     private float intTimer;
-    public GameObject player;
-
+    private bool isDead;
     #endregion
 
     // Start is called before the first frame update
@@ -39,12 +39,14 @@ public class EnemyFollow : MonoBehaviour
         SelectTarget();
         intTimer = timer;
         anim = GetComponent<Animator>();
+
+        isDead = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!attackMode)
+        if (!attackMode && !isDead)
         {
             move();
         }
@@ -167,6 +169,7 @@ public class EnemyFollow : MonoBehaviour
         GetComponentInChildren<EnemiesHitBox>().gameObject.SetActive(false);
         anim.SetTrigger("Damage");
         Invoke("kill", 1.94f);
+        isDead = true;
     }
 
     private void kill()
@@ -175,9 +178,10 @@ public class EnemyFollow : MonoBehaviour
 
         if (willHeartDrop())
         {
+            HeartPrefab.gameObject.transform.position = gameObject.transform.position;
             HeartPrefab.SetActive(true);
         }else{
-            Destroy(GetComponentInParent<GameObject>(), 0.25f);
+            Destroy(transform.parent.gameObject, 0.48f + 0.51f);
         }
     }
 

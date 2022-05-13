@@ -170,6 +170,7 @@ MonoBehaviour:
   inRange: 0
   hotZone: {fileID: 642006136918456315}
   triggerArea: {fileID: 642006138545256005}
+  HeartPrefab: {fileID: 0}
   player: {fileID: 0}
 --- !u!1 &642006136918456315
 GameObject:
