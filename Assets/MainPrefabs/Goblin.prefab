@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2289814281853428349}
   m_Layer: 6
   m_Name: Goblin
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -279,6 +279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6960387484822127578}
   - component: {fileID: 6960387484822127589}
+  - component: {fileID: 1373179020}
   m_Layer: 6
   m_Name: HitBox
   m_TagString: Untagged
@@ -294,7 +295,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6960387484822127579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.071, y: -0.087, z: 0}
+  m_LocalPosition: {x: 0.017, y: -0.082, z: 0}
   m_LocalScale: {x: 0.19861336, y: 0.19861336, z: 0.19861336}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -317,6 +318,18 @@ CircleCollider2D:
   m_Offset: {x: -0.055888105, y: 0.060545523}
   serializedVersion: 2
   m_Radius: 0.5512309
+--- !u!114 &1373179020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6960387484822127579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c0dd8ada3514e409e31ff5871a34a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6960387486158583854
 GameObject:
   m_ObjectHideFlags: 0

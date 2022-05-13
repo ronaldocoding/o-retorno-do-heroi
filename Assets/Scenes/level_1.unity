@@ -6520,7 +6520,7 @@ GameObject:
   m_Layer: 0
   m_Name: MushroomLeftLimit
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6532,7 +6532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363406724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.35, y: -2.2, z: 0}
+  m_LocalPosition: {x: 28.95, y: -2.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10647,7 +10647,7 @@ GameObject:
   m_Layer: 0
   m_Name: MushroomRighLimit
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -10659,7 +10659,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036474222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.49, y: -2.14, z: 0}
+  m_LocalPosition: {x: 51.79, y: -2.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10761,7 +10761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 642006136794884157, guid: 7d8f0588ec70648928d30871d5b1ed7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.2
+      value: 20.99
       objectReference: {fileID: 0}
     - target: {fileID: 642006136794884157, guid: 7d8f0588ec70648928d30871d5b1ed7a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12081,7 +12081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1936999000186675357, guid: 173cb5d8dc29e44939d1b585ee65c0e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.11
+      value: 35.54
       objectReference: {fileID: 0}
     - target: {fileID: 1936999000186675357, guid: 173cb5d8dc29e44939d1b585ee65c0e4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12882,7 +12882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6960387484200193424, guid: ab7a52f4da0864106b1204a6f7332f0d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 140.8
+      value: 27.7
       objectReference: {fileID: 0}
     - target: {fileID: 6960387484200193424, guid: ab7a52f4da0864106b1204a6f7332f0d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12938,7 +12938,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6960387484200193429, guid: ab7a52f4da0864106b1204a6f7332f0d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960387484822127578, guid: ab7a52f4da0864106b1204a6f7332f0d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.017
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960387484822127578, guid: ab7a52f4da0864106b1204a6f7332f0d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.082
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab7a52f4da0864106b1204a6f7332f0d, type: 3}
@@ -17026,6 +17034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1800079267053019146, guid: 590f8c3a7178b4ab483adc6f67b8cdc2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1800079267053019149, guid: 590f8c3a7178b4ab483adc6f67b8cdc2, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -17128,16 +17140,8 @@ PrefabInstance:
       value: Skeleton
       objectReference: {fileID: 0}
     - target: {fileID: 8524121963692057056, guid: 3c7c04f9fba3e4c9781fd3599b387b41, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8524121963692057057, guid: 3c7c04f9fba3e4c9781fd3599b387b41, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8524121963692057058, guid: 3c7c04f9fba3e4c9781fd3599b387b41, type: 3}
-      propertyPath: m_Layer
-      value: 6
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8524121963692057059, guid: 3c7c04f9fba3e4c9781fd3599b387b41, type: 3}
       propertyPath: player

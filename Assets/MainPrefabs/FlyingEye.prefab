@@ -14,13 +14,13 @@ GameObject:
   - component: {fileID: 642006136794884098}
   - component: {fileID: 642006136794884099}
   - component: {fileID: 642006136794884156}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FlyingEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &642006136794884157
 Transform:
   m_ObjectHideFlags: 0
@@ -252,6 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 642006138111765525}
   - component: {fileID: 642006138111765524}
+  - component: {fileID: 627683279}
   m_Layer: 0
   m_Name: HitBox
   m_TagString: Untagged
@@ -290,6 +291,18 @@ CircleCollider2D:
   m_Offset: {x: 0.06314137, y: 0.058631226}
   serializedVersion: 2
   m_Radius: 0.396268
+--- !u!114 &627683279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642006138111765526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c0dd8ada3514e409e31ff5871a34a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &642006138545256005
 GameObject:
   m_ObjectHideFlags: 0
