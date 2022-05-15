@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MiniBossHitBox : MonoBehaviour
+public class CagliostroHitBox : MonoBehaviour
 {
 
     private GameObject player;
