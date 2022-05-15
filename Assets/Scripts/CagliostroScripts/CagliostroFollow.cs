@@ -30,7 +30,7 @@ public class CagliostroFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        anim.SetBool("isAlive", true);
     }
 
     void Awake()
@@ -58,6 +58,18 @@ public class CagliostroFollow : MonoBehaviour
         if (inRange)
         {
             EnemyLogic();
+        }
+
+        teleportByDistance();
+    }
+
+    private void teleportByDistance() {
+        if(transform.position.x - player.transform.position.x >= 30.0) {
+            transform.position = new Vector2(player.transform.position.x-5, player.transform.position.y+10);
+        }
+        else if(player.transform.position.x - transform.position.x >= 30.0)
+        {
+            transform.position = new Vector2(player.transform.position.x+5, player.transform.position.y+10);
         }
     }
 
@@ -165,23 +177,20 @@ public class CagliostroFollow : MonoBehaviour
 
     public void Death()
     {
-        transform.gameObject.GetComponent<Rigidbody2D>().Sleep();
-        isDead = true;
-        GetComponentInChildren<CagliostroHitBox>().gameObject.SetActive(false);
+        GameController.instance.UpdateCagliostroHealth(-1);
+        if(GameController.instance.cagliostroHealth == 0) {
+            transform.gameObject.GetComponent<Rigidbody2D>().Sleep();
+            isDead = true;
+            GetComponentInChildren<CagliostroHitBox>().gameObject.SetActive(false);
+            anim.SetBool("isAlive", false);
+            anim.SetTrigger("take_hit");
+            Invoke("kill", 1.94f);
+        }
         anim.SetTrigger("take_hit");
-        Invoke("kill", 1.94f);
     }
 
     private void kill()
     {
         Destroy(transform.parent.gameObject);
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "StairStep")
-        {
-            Debug.Log("Colidiu com um degrau de uma escada");
-        }
     }
 }

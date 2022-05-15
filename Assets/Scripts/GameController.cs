@@ -6,25 +6,37 @@ using TMPro;
 public class GameController : MonoBehaviour
 {
 
-    public TextMeshProUGUI texto;
-    public int Health;
+    public TextMeshProUGUI playerHealthText;
+    public TextMeshProUGUI cagliostroHealthText;
+    public int playerHealth;
+    public int cagliostroHealth;
     public static GameController instance;
     // Start is called before the first frame update
 
     private void Awake() {
-        texto.SetText(Health.ToString());
+        playerHealthText.SetText((playerHealth/2).ToString());
+        cagliostroHealthText.SetText((cagliostroHealth/2).ToString());
     }
     void Start()
     {
         instance = this;
     }
 
-    public void UpdateHealth(int amount)
+    public void UpdatePlayerHealth(int amount)
     {
-        Health += amount;
-        if(Health < 0){
-            Health = 0;
+        playerHealth += amount;
+        if(playerHealth < 0){
+            playerHealth = 0;
         }
-        texto.SetText(Health.ToString());
+        playerHealthText.SetText((playerHealth/2).ToString());;
+    }
+
+    public void UpdateCagliostroHealth(int amount)
+    {
+        cagliostroHealth += amount;
+        if(cagliostroHealth < 0){
+            cagliostroHealth = 0;
+        }
+        cagliostroHealthText.SetText((cagliostroHealth/2).ToString());
     }
 }

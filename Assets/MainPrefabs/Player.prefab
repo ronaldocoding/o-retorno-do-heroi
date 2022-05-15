@@ -33,11 +33,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6563998259301111056, guid: c34f273f290ac4d5abb140638c8277f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.26
+      value: 284.63
       objectReference: {fileID: 0}
     - target: {fileID: 6563998259301111056, guid: c34f273f290ac4d5abb140638c8277f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.52
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 6563998259301111056, guid: c34f273f290ac4d5abb140638c8277f3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -80,12 +80,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6200000, guid: 3ea2cfbaccb664a929c14d45cca9551a, type: 2}
     - target: {fileID: 6563998259301111062, guid: c34f273f290ac4d5abb140638c8277f3, type: 3}
+      propertyPath: m_Size.x
+      value: 0.17946625
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563998259301111062, guid: c34f273f290ac4d5abb140638c8277f3, type: 3}
       propertyPath: m_Size.y
-      value: 0.2100985
+      value: 0.20062369
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563998259301111062, guid: c34f273f290ac4d5abb140638c8277f3, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.003376007
       objectReference: {fileID: 0}
     - target: {fileID: 6563998259301111062, guid: c34f273f290ac4d5abb140638c8277f3, type: 3}
       propertyPath: m_Offset.y
-      value: 0.15995073
+      value: 0.16468814
       objectReference: {fileID: 0}
     - target: {fileID: 6563998259301111063, guid: c34f273f290ac4d5abb140638c8277f3, type: 3}
       propertyPath: m_Name
@@ -116,9 +124,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.002995046}
+  m_Offset: {x: 0.0025332624, y: -0.010632187}
   serializedVersion: 2
-  m_Radius: 0.1204935
+  m_Radius: 0.09943286
 --- !u!114 &4891801096274841072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +143,7 @@ MonoBehaviour:
   Atacking: 1
   JumpForce: 22
   attackCheck: {fileID: 4328864622947328974}
-  radiusAttack: 2
+  radiusAttack: 4
   layerEnemy:
     serializedVersion: 2
     m_Bits: 64

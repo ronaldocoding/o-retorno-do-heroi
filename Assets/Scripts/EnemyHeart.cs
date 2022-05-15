@@ -31,7 +31,7 @@ public class EnemyHeart : MonoBehaviour
 
             collected.SetActive(true);
 
-            GameController.instance.UpdateHealth(1);
+            GameController.instance.UpdatePlayerHealth(1);
 
             Destroy(transform.parent.gameObject, 0.5f);
         }

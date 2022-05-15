@@ -19,9 +19,9 @@ public class CagliostroHitBox : MonoBehaviour
         {
             isAttacked = true;
             player = other.gameObject;
-            GameController.instance.UpdateHealth(-1);
+            GameController.instance.UpdatePlayerHealth(-1);
             player.GetComponent<Animator>().SetTrigger("take_hit");
-            Debug.Log("Vida player: " + GameController.instance.Health);
+            Debug.Log("Vida player: " + GameController.instance.playerHealth);
             
         }
     }

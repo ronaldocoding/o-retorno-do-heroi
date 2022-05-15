@@ -26,10 +26,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameController.instance.Health <= 0) 
+        if (GameController.instance.playerHealth <= 0) 
         {
-            anim.SetBool("isAlive", false);
             rig.Sleep();
+            anim.SetBool("isAlive", false);
         } 
         else
         {
@@ -117,13 +117,4 @@ public class Player : MonoBehaviour
             isJumping = true;
         }
     }
-
-    /*void OnTriggerEnter2D(Collider2D collider)
-    {
-        int enemyLayer = 6;
-        if(collider.gameObject.layer == enemyLayer)
-        {
-            collider.gameObject.GetComponent<EnemyFollow>().Death();
-        }
-    }*/
 }
