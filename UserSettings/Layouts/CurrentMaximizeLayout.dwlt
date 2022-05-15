@@ -335,7 +335,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -368,7 +368,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Tilemap Focus
@@ -638,23 +638,20 @@ MonoBehaviour:
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: 2096480721825344469, guid: ccee253ff083e9e45ac8d4d553de6318, type: 2}
-    - {fileID: 5110727391153756824, guid: 7052c8b4bb06f644ea75e62b72afedbd, type: 2}
-    - {fileID: 702462224772334024, guid: 259dec55138ab4cc9b41effe3412e01b, type: 2}
-    - {fileID: -7939868514918062295, guid: e62d533c95237430a8239b4fb030acb8, type: 2}
     - {fileID: -3594953697477744221, guid: db5b4abdf6d4441aab9b12b4e9b5540d, type: 2}
     - {fileID: 7042646823945697772, guid: fbddafef9ccb1472ab0221bdf46cbeed, type: 2}
     - {fileID: -254315036808469876, guid: 2898e8ae54954408e95dcc9e7a43d3d1, type: 2}
     - {fileID: -142609773008566903, guid: a5b06d49c76df4c848552c8cd4b266c1, type: 2}
     - {fileID: -2190638974329063494, guid: fcbdd08a5cc6b4043b1afae2f6801f66, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.67462295
+    - e00: 0.59859616
       e01: 0
       e02: 0
-      e03: 41.778328
+      e03: 151.39754
       e10: 0
-      e11: 0.67462295
+      e11: 0.59859616
       e12: 0
-      e13: 95.33539
+      e13: 70.28964
       e20: 0
       e21: 0
       e22: 1
@@ -663,14 +660,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.4433684
+    - e00: 1.5953785
       e01: 0
       e02: 0
-      e03: -7.1684265
+      e03: 147.4015
       e10: 0
-      e11: 0.4433684
+      e11: 1.5953785
       e12: 0
-      e13: 179.51369
+      e13: 25.72499
       e20: 0
       e21: 0
       e22: 1
@@ -679,12 +676,12 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 1
+    - e00: 0.13368641
       e01: 0
       e02: 0
-      e03: 0
+      e03: 137.57059
       e10: 0
-      e11: 1
+      e11: 0.13368641
       e12: 0
       e13: 0
       e20: 0
@@ -804,7 +801,7 @@ MonoBehaviour:
   m_MiniTool: 0
   m_LockTracker:
     m_IsLocked: 0
-  m_CurrentEditor: 1
+  m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
 --- !u!114 &10
@@ -966,7 +963,7 @@ MonoBehaviour:
     m_Globs: []
     m_OriginalText: level_3
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 40
   m_LastFolders:
   - Assets/MainPrefabs
   m_LastFoldersGridSize: -1
@@ -1058,7 +1055,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 40
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 222
 --- !u!114 &15
