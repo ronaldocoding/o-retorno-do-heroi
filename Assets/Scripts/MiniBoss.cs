@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MiniBoss : MonoBehaviour
 {
@@ -16,21 +17,27 @@ public class MiniBoss : MonoBehaviour
     public GameObject hotZone;
     public GameObject triggerArea;
     public GameObject player;
+    public GameObject hitBox;
+    public float Specialtimer = 10;
+    public bool isOnSpecial;
+    public int Health = 10;
+    public TextMeshProUGUI texto;
     #endregion
 
     #region private variables
-    private Animator anim;
-    private float distance; // b/w enemy and player
-    private bool attackMode;
-    private bool cooling; //cooldown after attack
-    private float intTimer;
-    private bool isDead;
+    [HideInInspector] public Animator anim;
+    [HideInInspector] public float distance; // b/w enemy and player
+    [HideInInspector] public bool attackMode;
+    /*[HideInInspector]*/
+    public bool cooling; //cooldown after attack
+    [HideInInspector] public float intTimer;
+    [HideInInspector] public bool isDead;
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-
+        texto.SetText((Health/2).ToString());
     }
 
     void Awake()
@@ -45,25 +52,26 @@ public class MiniBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!attackMode && !isDead)
+        texto.SetText((Health/2).ToString());
+
+        Specialtimer -= Time.deltaTime;
+
+        if (Specialtimer <= 0 && !attackMode)
         {
-            move();
+            randomSpecialAttack();
+            isOnSpecial = true;
         }
 
-        if (!InsideofLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName(AttackAnimationName))
+        if (isOnSpecial)
         {
-            SelectTarget();
-        }
-
-        if (inRange)
-        {
-            EnemyLogic();
+            Specialtimer = 10;
         }
     }
 
-    void EnemyLogic()
+    public void EnemyLogic()
     {
         distance = Vector2.Distance(transform.position, target.position);
+        //Debug.Log("DISTANCIA:"+distance);
 
         if (distance > attackDistance)
         {
@@ -84,14 +92,14 @@ public class MiniBoss : MonoBehaviour
         }
     }
 
-    void stopAttack()
+    public void stopAttack()
     {
         cooling = false;
         attackMode = false;
         anim.SetBool("Hit", false);
     }
 
-    void move()
+    public void move()
     {
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName(AttackAnimationName))
         {
@@ -125,7 +133,7 @@ public class MiniBoss : MonoBehaviour
         }
     }
 
-    private bool InsideofLimits()
+    public bool InsideofLimits()
     {
         return transform.position.x > leftLimit.position.x && transform.position.x < rightLimit.position.x;
     }
@@ -165,16 +173,33 @@ public class MiniBoss : MonoBehaviour
 
     public void Death()
     {
-        GetComponentInChildren<EnemiesHitBox>().gameObject.SetActive(false);
         anim.SetTrigger("Damage");
-        Invoke("kill", 1.94f);
-        isDead = true;
+        Health -= 1;
+
+        if (Health <= 0)
+        {
+            Health = 0;
+            Invoke("kill", 1.15f);
+            isDead = true;
+            anim.SetBool("isDead",true);
+        }
     }
 
     private void kill()
     {
         Destroy(gameObject);
-
         Destroy(transform.parent.gameObject, 0.48f + 0.51f);
+        Destroy(texto.GetComponentInParent<GameObject>());
+    }
+    void randomSpecialAttack()
+    {
+        switch (Random.Range(1, 2))
+        {
+            case 1:
+                anim.SetTrigger("Spell");
+                break;
+            default:
+                break;
+        }
     }
 }

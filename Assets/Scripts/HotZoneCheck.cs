@@ -18,7 +18,7 @@ public class HotZoneCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inRange && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName(enemyParent.AttackAnimationName))
+        if (inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName(enemyParent.AttackAnimationName))
         {
             enemyParent.Flip();
         }
