@@ -165,14 +165,23 @@ public class CagliostroFollow : MonoBehaviour
 
     public void Death()
     {
+        transform.gameObject.GetComponent<Rigidbody2D>().Sleep();
+        isDead = true;
         GetComponentInChildren<CagliostroHitBox>().gameObject.SetActive(false);
         anim.SetTrigger("take_hit");
         Invoke("kill", 1.94f);
-        isDead = true;
     }
 
     private void kill()
     {
         Destroy(transform.parent.gameObject);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "StairStep")
+        {
+            Debug.Log("Colidiu com um degrau de uma escada");
+        }
     }
 }
