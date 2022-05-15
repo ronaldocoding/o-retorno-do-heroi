@@ -187,6 +187,6 @@ public class EnemyFollow : MonoBehaviour
 
     private bool willHeartDrop()
     {
-        return true;//Random.Range(1, 11) == 1;
+        return Random.Range(0, 2) == 0 ? false:true;
     }
 }
