@@ -7578,8 +7578,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17fd6dee6f1edd41af8a5740320ceb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 1583156701}
-  Health: 10
+  playerHealthText: {fileID: 1583156701}
+  cagliostroHealthText: {fileID: 0}
+  playerHealth: 3
+  cagliostroHealth: 0
 --- !u!4 &1564931601
 Transform:
   m_ObjectHideFlags: 0

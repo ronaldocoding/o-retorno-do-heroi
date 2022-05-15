@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameController : MonoBehaviour
@@ -15,7 +16,8 @@ public class GameController : MonoBehaviour
 
     private void Awake() {
         playerHealthText.SetText((playerHealth/2).ToString());
-        cagliostroHealthText.SetText((cagliostroHealth/2).ToString());
+        
+        //cagliostroHealthText.SetText((cagliostroHealth/2).ToString());
     }
     void Start()
     {
@@ -38,5 +40,18 @@ public class GameController : MonoBehaviour
             cagliostroHealth = 0;
         }
         cagliostroHealthText.SetText(cagliostroHealth.ToString());
+    }
+
+    public void StartScene(string sceneName) 
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void ExitGameApplication() {
+        Application.Quit();
+    }
+
+    public void ExitPlayMode() {
+        UnityEditor.EditorApplication.isPlaying = false;
     }
 }

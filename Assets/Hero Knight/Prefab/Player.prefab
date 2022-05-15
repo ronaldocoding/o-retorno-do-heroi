@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 6563998259301111057}
   - component: {fileID: 6563998259301111062}
   - component: {fileID: 6563998259301111059}
-  - component: {fileID: 6563998259301111058}
   - component: {fileID: 6563998259301111053}
   m_Layer: 0
   m_Name: Player
@@ -167,26 +166,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6563998259301111058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6563998259301111063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3be4193413c67dd4b90dfa5de389959d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 4
-  Atacking: 4
-  JumpForce: 10
-  attackCheck: {fileID: 6563998259146451391}
-  radiusAttack: 0.65
-  layerEnemy:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!95 &6563998259301111053
 Animator:
   serializedVersion: 4
