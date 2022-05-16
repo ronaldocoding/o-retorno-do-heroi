@@ -22,7 +22,20 @@ We hope you enjoy the game ⚔️.
 
 ## Status 📈
 
-The project is still in **progress**.
+The project is **completed**.
+
+## Assets 🎨
+
+1. [Bringer Of Death](https://assetstore.unity.com/packages/2d/characters/bringer-of-death-free-195719)
+2. [Evil Wizard](https://assetstore.unity.com/packages/2d/characters/evil-wizard-168007)
+3. [Game UI](https://craftpix.net/product/game-ui-pixel-art/)
+4. [Gothicvania Town](https://assetstore.unity.com/packages/2d/characters/gothicvania-town-101407)
+5. [Hero Knight](https://assetstore.unity.com/packages/2d/characters/hero-knight-2-168019)
+6. [Medieval Castle & House](https://assetstore.unity.com/packages/2d/characters/medieval-castle-house-197177)
+7. [Monsters & Creatures](https://assetstore.unity.com/packages/2d/characters/monsters-creatures-fantasy-167949)
+8. [Pixel Art Platformer Village](https://assetstore.unity.com/packages/2d/environments/pixel-art-platformer-village-props-166114)
+9. [Pixel Art Icon Pack - RPG](https://assetstore.unity.com/packages/2d/gui/icons/pixel-art-icon-pack-rpg-158343)
+10. [Keyboard and Mouse Assets](https://deadmadman.itch.io/keyboard-and-mouse-assets)
 
 ## License 📝 
 
