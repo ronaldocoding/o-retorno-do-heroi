@@ -7018,8 +7018,7 @@ MonoBehaviour:
   cagliostroHealthText: {fileID: 0}
   playerHealth: 10
   cagliostroHealth: 0
-  GameOverBackground: {fileID: 6389002446703384876}
-  GameOverPanel: {fileID: 6389002446703384877}
+  GameOverPanel: {fileID: 6389002446703384876}
 --- !u!4 &1564931601
 Transform:
   m_ObjectHideFlags: 0
@@ -8976,6 +8975,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD Default
       objectReference: {fileID: 0}
+    - target: {fileID: 1459640957255436451, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1564931600}
+    - target: {fileID: 1459640957255436451, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459640957255436451, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: level_2_part_1
+      objectReference: {fileID: 0}
     - target: {fileID: 2448150361366097819, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -9036,12 +9047,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
 --- !u!1 &6389002446703384876 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6389002444939378901, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
-  m_PrefabInstance: {fileID: 6389002446703384875}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6389002446703384877 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4718260809856824024, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 131841146453677862, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
   m_PrefabInstance: {fileID: 6389002446703384875}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &6389002446703384878 stripped

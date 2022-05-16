@@ -1037,6 +1037,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD Default Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1459640957255436451, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 572039333}
+    - target: {fileID: 1459640957255436451, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459640957255436451, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: level_3_part_1
+      objectReference: {fileID: 0}
     - target: {fileID: 2448150361366097819, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1102,12 +1114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &90429057 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4718260809856824024, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
-  m_PrefabInstance: {fileID: 90429055}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &90429058 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6389002444939378901, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 131841146453677862, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
   m_PrefabInstance: {fileID: 90429055}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &90429059 stripped
@@ -7081,7 +7088,6 @@ MonoBehaviour:
   cagliostroHealthText: {fileID: 0}
   playerHealth: 20
   cagliostroHealth: 40
-  GameOverBackground: {fileID: 90429058}
   GameOverPanel: {fileID: 90429057}
 --- !u!4 &572039334
 Transform:

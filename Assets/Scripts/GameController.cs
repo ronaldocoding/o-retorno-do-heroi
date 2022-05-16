@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     public int playerHealth;
     public int cagliostroHealth;
     public static GameController instance;
-    public GameObject GameOverBackground;
+    //public GameObject GameOverBackground;
     public GameObject GameOverPanel;
     // Start is called before the first frame update
 
@@ -110,7 +110,7 @@ public class GameController : MonoBehaviour
     }
 
     public void ShowGameOver() {
-        GameOverBackground.SetActive(true);
+        //GameOverBackground.SetActive(true);
         GameOverPanel.SetActive(true);
     }
 

@@ -3566,11 +3566,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &243720302 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1860244940727841924, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
-  m_PrefabInstance: {fileID: 1789698021}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &263181975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3636,11 +3631,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92a08448cd3527a4aaf11bc404e0f1a0, type: 3}
---- !u!1 &279149072 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 567510665, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
-  m_PrefabInstance: {fileID: 1789698021}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &302562187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7253,8 +7243,7 @@ MonoBehaviour:
   cagliostroHealthText: {fileID: 0}
   playerHealth: 10
   cagliostroHealth: 0
-  GameOverBackground: {fileID: 279149072}
-  GameOverPanel: {fileID: 243720302}
+  GameOverPanel: {fileID: 1789698024}
 --- !u!4 &1564931601
 Transform:
   m_ObjectHideFlags: 0
@@ -7968,9 +7957,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 519420032}
     m_Modifications:
+    - target: {fileID: 1615157604, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5471557630362686644, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
       propertyPath: m_Name
       value: HUD Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542774902722334463, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1564931600}
+    - target: {fileID: 5542774902722334463, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542774902722334463, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: level_2_part_1
       objectReference: {fileID: 0}
     - target: {fileID: 8742568898368186823, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -8038,6 +8043,11 @@ RectTransform:
 --- !u!4 &1789698023 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9207729383522163209, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
+  m_PrefabInstance: {fileID: 1789698021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1789698024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6448643450719146362, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
   m_PrefabInstance: {fileID: 1789698021}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1797756866
