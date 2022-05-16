@@ -7276,7 +7276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealthText: {fileID: 90429059}
   cagliostroHealthText: {fileID: 0}
-  playerHealth: 20
+  playerHealth: 3
   cagliostroHealth: 40
   GameOverPanel: {fileID: 90429057}
 --- !u!4 &572039334
@@ -22699,6 +22699,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb958f59023f6463a8fdf4b8120f4fb6, type: 3}
+--- !u!1001 &3069332763567149770
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3069332763674403021, guid: 9d46c715ace84b64fb1f120f1df36c5d, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069332763674403021, guid: 9d46c715ace84b64fb1f120f1df36c5d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 235.68004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069332763674403021, guid: 9d46c715ace84b64fb1f120f1df36c5d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4908413
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069332763674403021, guid: 9d46c715ace84b64fb1f120f1df36c5d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03373416
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069332763674403021, guid: 9d46c715ace84b64fb1f120f1df36c5d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069332763674403021, guid: 9d46c715ace84b64fb1f120f1df36c5d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069332763674403021, guid: 9d46c715ace84b64fb1f120f1df36c5d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069332763674403021, guid: 9d46c715ace84b64fb1f120f1df36c5d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069332763674403021, guid: 9d46c715ace84b64fb1f120f1df36c5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069332763674403021, guid: 9d46c715ace84b64fb1f120f1df36c5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069332763674403021, guid: 9d46c715ace84b64fb1f120f1df36c5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069332763674403023, guid: 9d46c715ace84b64fb1f120f1df36c5d, type: 3}
+      propertyPath: m_Name
+      value: Sound-lvl3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d46c715ace84b64fb1f120f1df36c5d, type: 3}
 --- !u!1001 &3230265543004137496
 PrefabInstance:
   m_ObjectHideFlags: 0

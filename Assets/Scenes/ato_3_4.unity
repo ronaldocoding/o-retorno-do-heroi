@@ -728,6 +728,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 519420032}
     m_Modifications:
+    - target: {fileID: 1615157604, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 466536739192444648, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 352.19998
@@ -744,9 +748,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -163
       objectReference: {fileID: 0}
+    - target: {fileID: 5229998294942412591, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5471557630362686644, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
       propertyPath: m_Name
       value: HUD Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448643450719146362, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9207729383522163209, guid: dcd858871b16f4e96bf9a7212b6f9cf9, type: 3}
       propertyPath: m_RootOrder
@@ -832,7 +844,6 @@ MonoBehaviour:
   cagliostroHealthText: {fileID: 0}
   playerHealth: 10
   cagliostroHealth: 0
-  GameOverBackground: {fileID: 0}
   GameOverPanel: {fileID: 0}
 --- !u!4 &1564931601
 Transform:
