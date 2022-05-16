@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CagliostroFollow : MonoBehaviour
 {
@@ -177,6 +178,7 @@ public class CagliostroFollow : MonoBehaviour
 
     public void Death()
     {
+        anim.SetTrigger("take_hit");
         GameController.instance.UpdateCagliostroHealth(-1);
         if(GameController.instance.cagliostroHealth <= 0) {
             isDead = true;
@@ -188,7 +190,6 @@ public class CagliostroFollow : MonoBehaviour
             Destroy(gameObject.GetComponent<CircleCollider2D>());
             Destroy(gameObject.GetComponent<BoxCollider2D>());
         }
-        anim.SetTrigger("take_hit");
     }
 
     private void kill()

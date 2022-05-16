@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/home.unity
     guid: 3951650ee17324b14ac91bc777545e9c
   - enabled: 1
+    path: Assets/Scenes/controls.unity
+    guid: 671e23061203344a2a2887391d1c10dc
+  - enabled: 1
     path: Assets/Scenes/ato_1.unity
     guid: 13badda309e7c475b9249b5bb1155bb4
   - enabled: 1
@@ -36,9 +39,60 @@ EditorBuildSettings:
     path: Assets/Scenes/level_1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/level_2.unity
+    path: Assets/Scenes/ato_2_1.unity
+    guid: 5522c8f392d0e4cafba6448c05ceea01
+  - enabled: 1
+    path: Assets/Scenes/level_2_part_1.unity
     guid: 17b9db117eaf9439283e48b7599c3af9
   - enabled: 1
-    path: Assets/Scenes/level_3.unity
+    path: Assets/Scenes/ato_2_2.unity
+    guid: d32c8cbe2502e43ad99fbf2c2a7d7419
+  - enabled: 1
+    path: Assets/Scenes/ato_2_3.unity
+    guid: 77e3522ffd0be42dca0d611da3713a3a
+  - enabled: 1
+    path: Assets/Scenes/ato_2_4.unity
+    guid: 43bb8496440704ef0b58ad2d96fb2c59
+  - enabled: 1
+    path: Assets/Scenes/ato_2_5.unity
+    guid: f4225e22094214c04b04e0000df1a346
+  - enabled: 1
+    path: Assets/Scenes/level_2_part_2.unity
+    guid: 7e5c10659a6e441a0bbf36143eb7d743
+  - enabled: 1
+    path: Assets/Scenes/ato_2_6.unity
+    guid: cc40d630328364db9a7b5722d6fdf668
+  - enabled: 1
+    path: Assets/Scenes/ato_2_7.unity
+    guid: 6ddc2f2eee43644b6b0456f6f174532e
+  - enabled: 1
+    path: Assets/Scenes/ato_3_1.unity
+    guid: 1d102588278b0451ebde0c007083bba4
+  - enabled: 1
+    path: Assets/Scenes/level_3_part_1.unity
+    guid: 807c0a7fafcbe405ea2224d09e8bf164
+  - enabled: 1
+    path: Assets/Scenes/ato_3_2.unity
+    guid: 115d212d2716442dd8190be29e9a6179
+  - enabled: 1
+    path: Assets/Scenes/ato_3_3.unity
+    guid: d3fe37af155684c6cbd11b239dc6f007
+  - enabled: 1
+    path: Assets/Scenes/ato_3_4.unity
+    guid: fd44549f781114b54a1da20d14e16cde
+  - enabled: 1
+    path: Assets/Scenes/ato_3_5.unity
+    guid: b55fc4d8c725b4be88c957fc7ae1d7cd
+  - enabled: 1
+    path: Assets/Scenes/ato_3_6.unity
+    guid: 7f42762100da847bcb75f0a353fbe651
+  - enabled: 1
+    path: Assets/Scenes/ato_3_7.unity
+    guid: cdca099df99a34548a12e048c464a35a
+  - enabled: 1
+    path: Assets/Scenes/level_3_part_2.unity
     guid: 97221565069e54f5fa8c1a5baa6730f8
+  - enabled: 1
+    path: Assets/Scenes/win_game.unity
+    guid: 01155560abfbe4ea8b216e6287506851
   m_configObjects: {}

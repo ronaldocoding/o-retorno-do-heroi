@@ -27,6 +27,16 @@ public class GameController : MonoBehaviour
         instance = this;
     }
 
+    void Update() {
+        if(cagliostroHealthText != null)
+        {
+            if(cagliostroHealth <= 0)
+            {
+                Invoke("WinGame", 3f);
+            }
+        }
+    }
+
     public void UpdatePlayerHealth(int amount)
     {
         playerHealth += amount;
@@ -58,5 +68,10 @@ public class GameController : MonoBehaviour
 
     public void ExitPlayMode() {
         UnityEditor.EditorApplication.isPlaying = false;
+    }
+
+    private void WinGame()
+    {
+        SceneManager.LoadScene("win_game");
     }
 }
