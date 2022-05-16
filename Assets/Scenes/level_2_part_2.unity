@@ -8892,6 +8892,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 519420032}
     m_Modifications:
+    - target: {fileID: 890139131, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1084
+      objectReference: {fileID: 0}
     - target: {fileID: 1388423097488364264, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
       propertyPath: m_Name
       value: HUD Default

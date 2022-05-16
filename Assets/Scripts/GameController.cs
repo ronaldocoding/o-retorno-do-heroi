@@ -16,10 +16,24 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
-        playerHealthText.SetText((playerHealth / 2).ToString());
+        if (playerHealth < 10)
+        {
+            playerHealthText.SetText("0" + playerHealth.ToString());
+        }
+        else
+        {
+            playerHealthText.SetText(playerHealth.ToString());
+        }
         if (cagliostroHealthText != null)
         {
-            cagliostroHealthText.SetText((cagliostroHealth / 2).ToString());
+            if (cagliostroHealth < 10)
+            {
+                cagliostroHealthText.SetText("0" + cagliostroHealth.ToString());
+            }
+            else
+            {
+                cagliostroHealthText.SetText(cagliostroHealth.ToString());
+            }
         }
     }
     void Start()
@@ -27,10 +41,11 @@ public class GameController : MonoBehaviour
         instance = this;
     }
 
-    void Update() {
-        if(cagliostroHealthText != null)
+    void Update()
+    {
+        if (cagliostroHealthText != null)
         {
-            if(cagliostroHealth <= 0)
+            if (cagliostroHealth <= 0)
             {
                 Invoke("WinGame", 3f);
             }
@@ -44,7 +59,14 @@ public class GameController : MonoBehaviour
         {
             playerHealth = 0;
         }
-        playerHealthText.SetText(playerHealth.ToString());
+        if (playerHealth < 10)
+        {
+            playerHealthText.SetText("0" + playerHealth.ToString());
+        }
+        else
+        {
+            playerHealthText.SetText(playerHealth.ToString());
+        }
     }
 
     public void UpdateCagliostroHealth(int amount)
@@ -54,19 +76,28 @@ public class GameController : MonoBehaviour
         {
             cagliostroHealth = 0;
         }
-        cagliostroHealthText.SetText(cagliostroHealth.ToString());
+        if (cagliostroHealth < 10)
+        {
+            cagliostroHealthText.SetText("0" + cagliostroHealth.ToString());
+        }
+        else
+        {
+            cagliostroHealthText.SetText(cagliostroHealth.ToString());
+        }
     }
 
-    public void StartScene(string sceneName) 
+    public void StartScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
 
-    public void ExitGameApplication() {
+    public void ExitGameApplication()
+    {
         Application.Quit();
     }
 
-    public void ExitPlayMode() {
+    public void ExitPlayMode()
+    {
         UnityEditor.EditorApplication.isPlaying = false;
     }
 

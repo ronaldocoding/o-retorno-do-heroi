@@ -37,7 +37,14 @@ public class MiniBoss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        texto.SetText((Health / 2).ToString());
+       if(Health < 10)
+        {
+            texto.SetText("0" + Health.ToString());
+        }
+        else
+        {
+            texto.SetText(Health.ToString());
+        }
     }
 
     void Awake()
@@ -52,7 +59,14 @@ public class MiniBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        texto.SetText((Health / 2).ToString());
+        if(Health < 10)
+        {
+            texto.SetText("0" + Health.ToString());
+        }
+        else
+        {
+            texto.SetText(Health.ToString());
+        }
 
         Specialtimer -= Time.deltaTime;
 

@@ -597,6 +597,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 519420032}
     m_Modifications:
+    - target: {fileID: 890139131, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1084
+      objectReference: {fileID: 0}
     - target: {fileID: 1169775584, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -7042,7 +7046,7 @@ MonoBehaviour:
   playerHealthText: {fileID: 557762160}
   cagliostroHealthText: {fileID: 1892456017}
   playerHealth: 20
-  cagliostroHealth: 2
+  cagliostroHealth: 20
 --- !u!4 &572039334
 Transform:
   m_ObjectHideFlags: 0
