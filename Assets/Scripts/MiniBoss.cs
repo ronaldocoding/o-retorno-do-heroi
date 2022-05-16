@@ -37,7 +37,7 @@ public class MiniBoss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        texto.SetText((Health/2).ToString());
+        texto.SetText((Health / 2).ToString());
     }
 
     void Awake()
@@ -52,7 +52,7 @@ public class MiniBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        texto.SetText((Health/2).ToString());
+        texto.SetText((Health / 2).ToString());
 
         Specialtimer -= Time.deltaTime;
 
@@ -181,7 +181,10 @@ public class MiniBoss : MonoBehaviour
             Health = 0;
             Invoke("kill", 1.15f);
             isDead = true;
-            anim.SetBool("isDead",true);
+            anim.SetBool("isDead", true);
+            Destroy(gameObject.GetComponent<Rigidbody2D>());
+            Destroy(gameObject.GetComponent<CircleCollider2D>());
+            Destroy(gameObject.GetComponent<BoxCollider2D>());
         }
     }
 
