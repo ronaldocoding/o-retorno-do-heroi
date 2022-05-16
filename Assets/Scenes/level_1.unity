@@ -4791,7 +4791,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.6
+  m_fontSize: 18
   m_fontSizeBase: 46
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -13839,8 +13839,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17fd6dee6f1edd41af8a5740320ceb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 206831353}
-  Health: 3
+  playerHealthText: {fileID: 206831353}
+  cagliostroHealthText: {fileID: 0}
+  playerHealth: 10
+  cagliostroHealth: 10
 --- !u!4 &1562451881
 Transform:
   m_ObjectHideFlags: 0

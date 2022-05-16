@@ -28,7 +28,8 @@ public class Player : MonoBehaviour
     {
         if (GameController.instance.playerHealth <= 0) 
         {
-            rig.Sleep();
+            //rig.Sleep();
+            Destroy(gameObject.GetComponent<Rigidbody2D>());
             anim.SetBool("isAlive", false);
         } 
         else

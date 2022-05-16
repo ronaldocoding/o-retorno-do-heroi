@@ -169,6 +169,9 @@ public class EnemyFollow : MonoBehaviour
         GetComponentInChildren<EnemiesHitBox>().gameObject.SetActive(false);
         anim.SetTrigger("Damage");
         Invoke("kill", 1.94f);
+        Destroy(gameObject.GetComponent<Rigidbody2D>());
+        Destroy(gameObject.GetComponent<CircleCollider2D>());
+        Destroy(gameObject.GetComponent<BoxCollider2D>());
         isDead = true;
     }
 
