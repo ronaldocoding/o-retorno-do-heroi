@@ -28,9 +28,9 @@ public class Player : MonoBehaviour
     {
         if (GameController.instance.playerHealth <= 0) 
         {
-            //rig.Sleep();
             Destroy(gameObject.GetComponent<Rigidbody2D>());
             anim.SetBool("isAlive", false);
+            Invoke("ShowGameOver", 3f);
         } 
         else
         {
@@ -117,6 +117,10 @@ public class Player : MonoBehaviour
         {
             isJumping = true;
         }
+    }
+
+    private void ShowGameOver() {
+        GameController.instance.ShowGameOver();
     }
 
 }
