@@ -205,6 +205,8 @@ MonoBehaviour:
   isOnSpecial: 0
   Health: 20
   texto: {fileID: 0}
+  nextLevel: {fileID: 0}
+  heartImage: {fileID: 0}
   anim: {fileID: 0}
   distance: 0
   attackMode: 0
@@ -422,7 +424,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.055046737, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -433,7 +435,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.1100935, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &7046123367052610115
 MonoBehaviour:

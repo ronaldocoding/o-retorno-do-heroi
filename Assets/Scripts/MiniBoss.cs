@@ -23,6 +23,7 @@ public class MiniBoss : MonoBehaviour
     public int Health = 10;
     public TextMeshProUGUI texto;
     public GameObject nextLevel;
+    public GameObject heartImage;
     #endregion
 
     #region private variables
@@ -202,6 +203,9 @@ public class MiniBoss : MonoBehaviour
             Destroy(gameObject.GetComponent<Rigidbody2D>());
             Destroy(gameObject.GetComponent<CircleCollider2D>());
             Destroy(gameObject.GetComponent<BoxCollider2D>());
+
+            Destroy(texto);
+            Destroy(heartImage);
         }
     }
 
