@@ -22,6 +22,7 @@ public class MiniBoss : MonoBehaviour
     public bool isOnSpecial;
     public int Health = 10;
     public TextMeshProUGUI texto;
+    public GameObject nextLevel;
     #endregion
 
     #region private variables
@@ -54,6 +55,7 @@ public class MiniBoss : MonoBehaviour
         anim = GetComponent<Animator>();
 
         isDead = false;
+        nextLevel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -192,6 +194,7 @@ public class MiniBoss : MonoBehaviour
 
         if (Health <= 0)
         {
+            nextLevel.SetActive(true);
             Health = 0;
             Invoke("kill", 1.15f);
             isDead = true;

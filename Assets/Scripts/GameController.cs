@@ -16,6 +16,8 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
+        playerHealth = PlayerPrefs.GetInt("playerHealth", playerHealth);
+
         if (playerHealth < 10)
         {
             playerHealthText.SetText("0" + playerHealth.ToString());
@@ -24,6 +26,7 @@ public class GameController : MonoBehaviour
         {
             playerHealthText.SetText(playerHealth.ToString());
         }
+
         if (cagliostroHealthText != null)
         {
             if (cagliostroHealth < 10)
@@ -35,6 +38,11 @@ public class GameController : MonoBehaviour
                 cagliostroHealthText.SetText(cagliostroHealth.ToString());
             }
         }
+    }
+    public void StartScene(string sceneName)
+    {
+        PlayerPrefs.SetInt("playerHealth", playerHealth);
+        SceneManager.LoadScene(sceneName);
     }
     void Start()
     {
@@ -84,11 +92,6 @@ public class GameController : MonoBehaviour
         {
             cagliostroHealthText.SetText(cagliostroHealth.ToString());
         }
-    }
-
-    public void StartScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
     }
 
     public void ExitGameApplication()

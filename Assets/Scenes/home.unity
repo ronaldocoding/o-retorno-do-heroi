@@ -14679,7 +14679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealthText: {fileID: 206831353}
   cagliostroHealthText: {fileID: 0}
-  playerHealth: 6
+  playerHealth: 3
   cagliostroHealth: 0
 --- !u!4 &1562451881
 Transform:
