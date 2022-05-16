@@ -10345,7 +10345,7 @@ RectTransform:
   m_GameObject: {fileID: 808797637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3765288, y: 1.5906129, z: 3.4434612}
+  m_LocalScale: {x: 0.44641256, y: 1.8858308, z: 4.0825677}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 765886661}
@@ -10353,7 +10353,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -62, y: -55.5}
+  m_AnchoredPosition: {x: -103, y: -94}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &808797639
@@ -15167,6 +15167,8 @@ MonoBehaviour:
   cagliostroHealthText: {fileID: 0}
   playerHealth: 6
   cagliostroHealth: 0
+  GameOverBackground: {fileID: 0}
+  GameOverPanel: {fileID: 0}
 --- !u!4 &1562451881
 Transform:
   m_ObjectHideFlags: 0

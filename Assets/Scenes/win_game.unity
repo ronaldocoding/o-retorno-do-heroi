@@ -390,7 +390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 316, y: -150}
+  m_AnchoredPosition: {x: 316, y: -178}
   m_SizeDelta: {x: 196.3, y: 28.199982}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &380983442
@@ -717,7 +717,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: -258.3}
+  m_AnchoredPosition: {x: -2, y: -429}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &982997092
@@ -923,6 +923,8 @@ MonoBehaviour:
   cagliostroHealthText: {fileID: 0}
   playerHealth: 6
   cagliostroHealth: 0
+  GameOverBackground: {fileID: 0}
+  GameOverPanel: {fileID: 0}
 --- !u!4 &1562451881
 Transform:
   m_ObjectHideFlags: 0
@@ -1138,7 +1140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 62, y: 33.6}
+  m_AnchoredPosition: {x: 71, y: -23}
   m_SizeDelta: {x: 200, y: -212}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1884714868

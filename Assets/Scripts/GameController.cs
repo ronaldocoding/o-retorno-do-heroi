@@ -18,7 +18,6 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
-        playerHealth = PlayerPrefs.GetInt("playerHealth", playerHealth);
 
         if (playerHealth < 10)
         {
@@ -43,7 +42,6 @@ public class GameController : MonoBehaviour
     }
     public void StartScene(string sceneName)
     {
-        PlayerPrefs.SetInt("playerHealth", playerHealth);
         SceneManager.LoadScene(sceneName);
     }
     void Start()
@@ -101,10 +99,10 @@ public class GameController : MonoBehaviour
         Application.Quit();
     }
 
-    public void ExitPlayMode()
+    /*public void ExitPlayMode()
     {
         UnityEditor.EditorApplication.isPlaying = false;
-    }
+    }*/
 
     private void WinGame()
     {

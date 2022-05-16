@@ -1110,6 +1110,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6389002444939378901, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
   m_PrefabInstance: {fileID: 90429055}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &90429059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1683821728, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
+  m_PrefabInstance: {fileID: 90429055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &92214330 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3226521009676847262, guid: c13263f1f05170f4e849875cee5c46d0, type: 3}
@@ -2460,17 +2471,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 640884112300722920, guid: 95499652fadbd474a8714ed7900e78dc, type: 3}
   m_PrefabInstance: {fileID: 471082947}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &187707379 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3542241162671316124, guid: c8dfa6d667c754bbaa5346f79caff85f, type: 3}
-  m_PrefabInstance: {fileID: 90429055}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &188060078
 GameObject:
   m_ObjectHideFlags: 0
@@ -7077,7 +7077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17fd6dee6f1edd41af8a5740320ceb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealthText: {fileID: 187707379}
+  playerHealthText: {fileID: 90429059}
   cagliostroHealthText: {fileID: 0}
   playerHealth: 20
   cagliostroHealth: 40
